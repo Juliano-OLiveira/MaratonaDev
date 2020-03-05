@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: blueviolet;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+
+  height: 100vh;
+}
+
+header,
+main,
+footer {
+  text-align: center;
+}
+
+body.header,
+p,
+h1 {
+  color: antiquewhite;
+}
+
+.bt1 {
+  color: wheat;
+  background-color: red;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.bt1:hover {
+  background-color: crimson;
+}
+section.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+  background-color: red;
+  padding: 16px 64px;
+  border-radius: 5px;
+  align-items: center;
+}
+main .donors {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+header,
+.form,
+main {
+  width: 90%;
+  max-width: 500px;
+
+  margin: 0 auto 70px auto;
+}
+.form h2 {
+  text-align: right;
+  color: bisque;
+  font-size: 16px;
+}
+header h1,
+main h2 {
+  margin-bottom: 70px;
+}
+man h2,
+span {
+  color: red;
+}
+.blood {
+  color: #c90505;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+}
+.blood::before {
+  content: "";
+  background-color: #ff4f;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  border-radius: 50%;
+  border-top-right-radius: 0%;
+  transform: rotate(-45deg);
+  opacity: 20%;
+}
+.donor,
+p {
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.form input,
+.form button {
+  width: 100%;
+
+  margin-bottom: 4px;
+  border-radius: 4px;
+  padding: 8px 16px;
+}
+.form button {
+  font-weight: bold;
+  border: none;
+}
+.form button:hover {
+  background-color: #2611e6;
+  color: white;
+}
+.form input {
+  background-color: transparent;
+}
+
+.form input::placeholder {
+  color: #ffffffaa;
+}
+footer {
+  margin-top: auto;
+  padding: 16px;
+  border: 1px solid #fff;
+  color: bisque;
+}
+
+.coracao {
+  font-size: 30px;
+}
+
+/*funcionalidades java script*/
+section.form {
+  transition: all 300ms;
+}
+
+section.form.hide {
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  margin-top: -70px;
+}
